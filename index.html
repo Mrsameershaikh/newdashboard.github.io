@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tac-Tic-Tec</title>
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h1>Tac-Tic-Tec</h1>
+            <span><img src="logo (2).png" alt=""></span>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="#"><span class="las la-chart-pie"></span><span>Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="las la-wallet"></span><span>Tactics Vault</span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="las la-users"></span><span>Teams</span></a>
+                </li>
+                <li>
+                    <a href="#" class="active"><span class="las la-edit"></span><span>Schedule Generator</span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="las la-calendar-day"></span><span>Weekly Training Plans</span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="las la-chart-bar"></span><span>Team Matrics</span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="las la-cog"></span><span>Customization</span></a>
+                </li>
+            </ul>
+            <div class="teamdrop">
+                <select name="sel" id="sel">
+                    <option selected>Select Team Name</option>
+                    <option>Team1</option>
+                    <option>Team2</option>
+                    <option>Team3</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div>
+                <span><a href="#" id="team">Team</a></span>
+                <span><a href="#" style="color: rgb(150, 144, 144);">U23</a></span>
+                <span><a href="#" style="color: rgb(150, 144, 144);">U19</a></span>
+            </div>
+
+            <div class="user-wrapper">
+                <img src="avatar.png" width="50px" height="50px" alt="image not found">
+                <div>
+                    <select name="" id="">
+                        <option>Marcus</option>
+                        <option>Jhon</option>
+                        <option>Sanjay</option>
+                        <option>Pooja</option>
+                        <option>Sam</option>
+                    </select>
+                </div>
+            </div>
+
+        </header>
+        <main>
+            <div class="container1">
+                <button class="btn" id="clickbtn">Add New Schedule</button>
+            </div>
+            <div class="popup">
+                <div class="popup-content">
+                    <h3>Create New Schedule</h3>
+                    <hr>
+                    <h5>Schedule Name</h5>
+
+                    <div class="popupname">
+                        <input type="text" placeholder="Enter name">
+                    </div>
+                    <div class="datelbl">
+                        <h5>Start date</h5>
+                        <h5>End date</h5>
+                        <h5>Enter No. of weeks</h5>
+                    </div>
+                    <div class="dateinput">
+                        <input type="number" placeholder="Select start date">
+                        <input type="date" placeholder="Select end date">
+                        <input type="date" placeholder="Enter No. of weeks">
+                    </div>
+                    <div style="width:500px;" id="btncontain">
+                        <div><button type="submit" class="msgBtn">Close</button></div>
+                        <div><button type="submit" class="msgBtn2">Create</button></div>
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <input type="search" placeholder="⌕ Search you schedule">
+            </div>
+            <section class="scheduled">
+                <div>
+                    <details>
+                        <summary>Winter Training Schedule<span class="las la-chevron-circle-down"></span><span
+                                class="las la-pencil-alt"></span><span class="las la-trash"></span></span><br><span
+                                class="duration">4 weeks | 12 Sessions
+                                <hr>
+                            </span></summary><button class="btn1">Update</button><span>START DATE.</span><strong>20
+                            January 2020</strong><span>END DATE.</span><strong>19 February 2020</strong>
+                        <div class="container">
+                            <div class="group">
+                                <input type="checkbox" id="sun">
+                                <label for="sun">&xcirc;&nbsp;&nbsp;SUNDAY</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="mon">
+                                <label for="mon">&xcirc;&nbsp;&nbsp;MONDAY</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="tue">
+                                <label for="tue">&xcirc;&nbsp;&nbsp;TUESDAY</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="wed">
+                                <label for="wed">&xcirc;&nbsp;&nbsp;WEDNESDAY</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="thus">
+                                <label for="thus">&xcirc;&nbsp;&nbsp;THURSDAY</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="fri">
+                                <label for="fri">&xcirc;&nbsp;&nbsp;FRIDAY</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="sat">
+                                <label for="sat">&xcirc;&nbsp;&nbsp;SATURDAY</label>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+
+            </section>
+            <section class="scheduled">
+                <div>
+                    <details>
+                        <summary>Winter Training Schedule<span class="las la-chevron-circle-down"></span><span
+                                class="las la-pencil-alt"></span><span class="las la-trash"></span></span><br><span
+                                class="duration">4 weeks | 12 Sessions
+                                <hr>
+                            </span></summary> <button class="btn1">Update</button> <span>START DATE.</span><strong>20
+                            January 2020</strong><span>END DATE.</span><strong>19 February 2020</strong>
+                        <div class="container">
+                            <div class="group1">
+                                <input type="checkbox" id="sun1">
+                                <label for="sun1">&xcirc;&nbsp;&nbsp;SUNDAY</label>
+                            </div>
+                            <div class="group1">
+                                <input type="checkbox" id="mon1">
+                                <label for="mon1">&xcirc;&nbsp;&nbsp;MONDAY</label>
+                            </div>
+                            <div class="group1">
+                                <input type="checkbox" id="tue1">
+                                <label for="tue1">&xcirc;&nbsp;&nbsp;TUESDAY</label>
+                            </div>
+                            <div class="group1">
+                                <input type="checkbox" id="wed1">
+                                <label for="wed1">&xcirc;&nbsp;&nbsp;WEDNESDAY</label>
+                            </div>
+                            <div class="group1">
+                                <input type="checkbox" id="thus1">
+                                <label for="thus1">&xcirc;&nbsp;&nbsp;THURSDAY</label>
+                            </div>
+                            <div class="group1">
+                                <input type="checkbox" id="fri1">
+                                <label for="fri1">&xcirc;&nbsp;&nbsp;FRIDAY</label>
+                            </div>
+                            <div class="group1">
+                                <input type="checkbox" id="sat1">
+                                <label for="sat1">&xcirc;&nbsp;&nbsp;SATURDAY</label>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+
+            </section>
+            <section class="scheduled">
+                <div>
+                    <details>
+                        <summary>Winter Training Schedule<span class="las la-chevron-circle-down"></span><span
+                                class="las la-pencil-alt"></span><span class="las la-trash"></span></span><br><span
+                                class="duration">4 weeks | 12 Sessions
+                                <hr>
+                            </span></summary><button class="btn1">Update</button><span>START DATE.</span><strong>20
+                            January 2020</strong><span>END DATE.</span><strong>19 February 2020</strong>
+                        <div class="container">
+                            <div class="group2">
+                                <input type="checkbox" id="sun2">
+                                <label for="sun2">&xcirc;&nbsp;&nbsp;SUNDAY</label>
+                            </div>
+                            <div class="group2">
+                                <input type="checkbox" id="mon2">
+                                <label for="mon2">&xcirc;&nbsp;&nbsp;MONDAY</label>
+                            </div>
+                            <div class="group2">
+                                <input type="checkbox" id="tue2">
+                                <label for="tue2">&xcirc;&nbsp;&nbsp;TUESDAY</label>
+                            </div>
+                            <div class="group2">
+                                <input type="checkbox" id="wed2">
+                                <label for="wed2">&xcirc;&nbsp;&nbsp;WEDNESDAY</label>
+                            </div>
+                            <div class="group2">
+                                <input type="checkbox" id="thus2">
+                                <label for="thus2">&xcirc;&nbsp;&nbsp;THURSDAY</label>
+                            </div>
+                            <div class="group2">
+                                <input type="checkbox" id="fri2">
+                                <label for="fri2">&xcirc;&nbsp;&nbsp;FRIDAY</label>
+                            </div>
+                            <div class="group2">
+                                <input type="checkbox" id="sat2">
+                                <label for="sat2">&xcirc;&nbsp;&nbsp;SATURDAY</label>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+
+            </section>
+            <section class="scheduled">
+                <div>
+                    <details>
+                        <summary>Winter Training Schedule<span class="las la-chevron-circle-down"></span><span
+                                class="las la-pencil-alt"></span><span class="las la-trash"></span></span><br><span
+                                class="duration">4 weeks | 12 Sessions
+                                <hr>
+                            </span></summary><button class="btn1">Update</button><span>START DATE.</span><strong>20
+                            January 2020</strong><span>END DATE.</span><strong>19 February 2020</strong>
+                        <div class="container">
+                            <div class="group3">
+                                <input type="checkbox" id="sun3">
+                                <label for="sun3">&xcirc;&nbsp;&nbsp;SUNDAY</label>
+                            </div>
+                            <div class="group3">
+                                <input type="checkbox" id="mon3">
+                                <label for="mon3">&xcirc;&nbsp;&nbsp;MONDAY</label>
+                            </div>
+                            <div class="group3">
+                                <input type="checkbox" id="tue3">
+                                <label for="tue3">&xcirc;&nbsp;&nbsp;TUESDAY</label>
+                            </div>
+                            <div class="group3">
+                                <input type="checkbox" id="wed3">
+                                <label for="wed3">&xcirc;&nbsp;&nbsp;WEDNESDAY</label>
+                            </div>
+                            <div class="group3">
+                                <input type="checkbox" id="thus3">
+                                <label for="thus3">&xcirc;&nbsp;&nbsp;THURSDAY</label>
+                            </div>
+                            <div class="group3">
+                                <input type="checkbox" id="fri3">
+                                <label for="fri3">&xcirc;&nbsp;&nbsp;FRIDAY</label>
+                            </div>
+                            <div class="group3">
+                                <input type="checkbox" id="sat3">
+                                <label for="sat3">&xcirc;&nbsp;&nbsp;SATURDAY</label>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+
+            </section>
+        </main>
+
+    </div>
+<script>
+    document.getElementById("clickbtn").addEventListener("click",function(){
+        document.querySelector(".popup").style.display="flex";
+    })
+    document.querySelector(".msgBtn").addEventListener("click",function(){
+            document.querySelector(".popup").style.display="none";
+    })
+
+
+</script>
+</body>
+
+</html>
